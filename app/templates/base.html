@@ -8,55 +8,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
 
     <title>{% block title %}title{% endblock %}</title>
   </head>
   <body>
-    <div class="jumbotron">
-        <h1 class="display-4">Another Web Page</h1>
+    <div id="header">
+          <div id="inner_header">
+            <div id="logo_container ">
+              <h1><span>MY</span> FITNESS <span>PAGE</span></h1>
+            </div> 
+          </div>
+    </div>
+    <div id="navbar">
+         <ul>
+           <li><a href="#">HOME</a></li>
+           <li><a href="#">VIDEO</a></li>
+           <li><a href="#">BLOG</a></li>
+           <li><a href="#">WORKOUTS</a>
+                 <ul>
+                   <li><a>first</a></li>
+                   <li><a>secrond</a></li>
+                   <li><a>third</a></li>
+                   <li><a>fourth</a></li>
+                 </ul>
+          </li>
+           <li><a href="#">TRAINERS</a>
+                  <ul>
+                    <li><a>trener 1</a></li>
+                    <li><a>trener 2</a></li>
+                    <li><a>trener 3</a></li>
+                    <li><a>trener 4</a></li>
+                  </ul>
+          </li>
+         </ul>
+
+
     </div>
 
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">WEB PAGE: </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="home">DOMOV <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="workout">WORKOUTS <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="blog">ČLANKI <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="video">VIDEO VSEBINE <span class="sr-only">(current)</span></a>
-              </li>
-            
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                TRENERJI
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Trener 1</a>
-                <a class="dropdown-item" href="#">Trener 2</a>
-                <a class="dropdown-item" href="#">Trener 3</a>
-                <a class="dropdown-item" href="#">Trener 4</a>
-                <a class="dropdown-item" href="#">Trener 5</a>
-                
-              </div>
-            </li>
-            
-          
-        </div>
-      </nav>
+  
 
 
 

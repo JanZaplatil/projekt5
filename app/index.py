@@ -12,7 +12,6 @@ def home():
     return render_template('home.html')
 
 
-
 @app.route('/blog')
 def blog():
     with open('static/clanek_noge_noge.csv') as csv_file:
@@ -35,7 +34,6 @@ def workout():
 @app.route('/video')
 def video():
     return render_template('video.html')
-
 
 
 
