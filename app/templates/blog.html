@@ -3,19 +3,90 @@
 home page
 {% endblock %}
 
+
+
 {% block content %}
 
+{% for element in elements %} 
+    
 
 
-{% for para in paragraphs %}
-    
-    <p>
-       {{ paragraphs }}
-    </p>
-    
+  <div class="grid-container">
+
+    <div class="grid-item" id="content-one">
+      <h1>{{ element.hedaer }}</h1>
+      <p>{{ element.post }}</p>
+      <img src="{{element.img_source}}"/>
+
+      <button id="show-more-one">BUTTON</button></div>
+
+
+    <div class="grid-item" id="content-two">
+      <h1>{{ element.hedaer }}</h1>
+      <p>{{ element.post }}</p>
+      <img src="{{element.img_source}}"/>
+      <button id="show-more-two">BUTTON</button></div>
+
+    <div class="grid-item"><h1>Neka osnovna vaja</h1>
+      <button>BUTTON</button></div>  
+    <div class="grid-item"><h1>Neka osnovna vaja</h1>
+      <button>BUTTON</button></div>
+    <div class="grid-item"><h1>Neka osnovna vaja</h1>
+      <button>BUTTON</button></div>
+    <div class="grid-item"><h1>Neka osnovna vaja</h1>
+      <button>BUTTON</button></div>  
+    <div class="grid-item"><h1>Neka osnovna vaja</h1>
+      <button>BUTTON</button></div>
+    <div class="grid-item"><h1>Neka osnovna vaja</h1>
+      <button>BUTTON</button></div>
+    <div class="grid-item"><h1>Neka osnovna vaja</h1>
+      <button>BUTTON</button></div>
+    <div class="grid-item"><h1>Neka osnovna vaja</h1>
+      <button>BUTTON</button></div>
+    <div class="grid-item"><h1>Počep osnovna vaja</h1>
+      <button>BUTTON</button></div>
+    <div class="grid-item"><h1>Počep osnovna vaja</h1>
+      <button>BUTTON</button></div>  
+  </div>
+
+  
+  <script>
+       
+     //var content = document.getElementById("content");
+     var content = document.getElementById("content-one");
+     var button = document.getElementById("show-more-one");
+  
+
+     button.onclick = function() {
+     
+     if(content.className == "grid-item"){
+     //expand the box
+     content.className ="grid-item-open";
+     
+     }else {
+     //shrink the box
+     content.className = "grid-item";
+     }
+}
+    var contentone= document.getElementById("content-two");
+    var buttontwo = document.getElementById("show-more-two");
+
+
+    buttontwo.onclick = function() {
+
+    if(contentone.className == "grid-item"){
+    //expand the box
+    contentone.className ="grid-item-open";
+
+    }else {
+    //shrink the box
+    contentone.className = "grid-item";
+    }
+    }
+
+  </script>
 {% endfor %}
-
-
-
-
+    
 {% endblock %}
+
+

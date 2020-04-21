@@ -14,6 +14,7 @@
     <title>{% block title %}title{% endblock %}</title>
   </head>
   <body>
+    
     <div id="header">
           <div id="inner_header">
             <div id="logo_container ">
@@ -23,10 +24,10 @@
     </div>
     <div id="navbar">
          <ul>
-           <li><a href="#">HOME</a></li>
-           <li><a href="#">VIDEO</a></li>
-           <li><a href="#">BLOG</a></li>
-           <li><a href="#">WORKOUTS</a>
+           <li><a href="/home">HOME</a></li>
+           <li><a href="/video">VIDEO</a></li>
+           <li><a href="/blog">BLOG</a></li>
+           <li><a href="/workout">WORKOUT</a>
                  <ul>
                    <li><a>first</a></li>
                    <li><a>secrond</a></li>
@@ -34,7 +35,7 @@
                    <li><a>fourth</a></li>
                  </ul>
           </li>
-           <li><a href="#">TRAINERS</a>
+           <li><a href="/trainers">TRAINERS</a>
                   <ul>
                     <li><a>trener 1</a></li>
                     <li><a>trener 2</a></li>
@@ -47,14 +48,10 @@
 
     </div>
 
-  
-
-
 
     {% block content %}
-     
     {% endblock %}
-
+   
 
 
 
